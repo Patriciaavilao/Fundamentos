@@ -1,0 +1,114 @@
+ej5
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int multiplo (int A, int B);
+
+void main()
+{
+	int A,B,flag=true,multiplo;
+	cout<<"ingrese el pimer valor";
+	cin>>A>>endl;
+	cout<<"ingrese el segundo valor";
+	cin>>B>>endl;
+	multiplo = multiplo (A,B);
+	if (flag=true)
+	{
+	cout<<"1";
+	}
+	else
+	{
+	cout<<"0";
+	}
+	getch();
+	return 0;
+}
+
+
+int multiplo (int A, int B)
+{
+	int A,B,flag;
+	if ((A<B)&&(B/A=0))
+	{
+		flag=true;
+	}
+	if ((B>A)&&(A/B=0))
+	{
+		flag=true;
+	}
+else
+    {
+	flag=false;
+	}
+	return multiplo;
+}
+ej6
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float DeterminarPrecio (float distancia);
+
+void main()
+{
+	float d,e,p;
+	cout<<"ingrese la distancia a recorrer";
+	cin>>d;
+	cout<<"ingrese los dias de estadia";
+	cin>>e;
+	p= DeterminarPrecio(d);
+	cout<<"el precio es:">>p;
+	getch();
+	return 0;
+}
+
+
+float DeterminarPrecio (float distancia)
+{
+	float d,e,p,x;
+	x= d*(0.75);
+	p= x;
+	if ((d>800) && (e>7))
+		p= p - (x*0.3)
+	return p;
+}
+ej7
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+float calcular_serie (float q);
+
+void main()
+{
+	float q,n,x;
+	cout<<"ingrese el parametro"<<endl;
+	cin>>n>>endl;
+	cout<<"ingrese el valor de x"<<endl;
+	cin>>x>>endl;
+	float calcular_serie (float q)
+	cout<<"la serie es:";
+	cout<<q;
+	getch();
+	return 0;
+}
+
+
+float calcular_serie (float q)
+{
+	float n,x,q=0,y,i;
+	for (i=1, i<=n, i++)
+	{
+	y=-1;
+	q= q+(3.14)+(pow(x,i))/(i+1)%10;
+	}
+	return q;
+}
